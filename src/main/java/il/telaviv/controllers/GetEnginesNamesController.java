@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-@CrossOrigin
+//@CrossOrigin
 @Controller
 public class GetEnginesNamesController {
 
