@@ -551,8 +551,11 @@ window.onload = function() {
 
     function addNewEngine(motor_number){                 // добавление мотора на экран (принимает на вход номер мотора)
            var new_small_title  = $("<div class='small_title'>" + motor_number + "</div>");
-           var new_image_play   = $("<img class='image_red_play'  src='https://i.ibb.co/tPD9WcM/play-red.png'>");
-           var new_image_pause  = $("<img class='image_green_pause' src='https://i.ibb.co/HXyf1Xg/pause-green.png'>");
+           //var new_image_play   = $("<img class='image_red_play'    src='https://i.ibb.co/tPD9WcM/play-red.png'>");
+           //var new_image_pause  = $("<img class='image_green_pause' src='https://i.ibb.co/HXyf1Xg/pause-green.png'>");
+           var new_image_play   = $("<img class='image_red_play'    src='/images/play-red.png'>");
+           var new_image_pause  = $("<img class='image_green_pause' src='/images/pause-green.png'>");
+
            var new_small_led      = $("<div class='small_led'/>")
                                                 .append(new_image_play)
                                                 .append(new_image_pause);
