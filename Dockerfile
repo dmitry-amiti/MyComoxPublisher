@@ -8,7 +8,7 @@ RUN mvn package -DskipTests
 #
 # Package stage
 #
-FROM openjdk:17.0.1-jdk-slim
+FROM openjdk:8-jdk-slim
 COPY --from=build /target/mycomox-publisher-1.0.jar demo.jar
 # ENV PORT=8080
 EXPOSE 8080
