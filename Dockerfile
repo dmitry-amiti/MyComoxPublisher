@@ -11,5 +11,5 @@ RUN mvn clean package -DskipTests
 FROM openjdk:8-jdk-slim
 COPY --from=build /target/mycomox-publisher-1.0.jar demo.jar
 # ENV PORT=8080
-EXPOSE 8383
+EXPOSE 8383/tcp
 ENTRYPOINT ["java","-jar","demo.jar"]
