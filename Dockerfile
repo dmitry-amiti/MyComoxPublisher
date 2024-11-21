@@ -3,7 +3,7 @@
 #
 FROM maven:3.3.9-jdk-8 AS build
 COPY . .
-RUN mvn package -DskipTests
+RUN mvn clean package -DskipTests
 
 #
 # Package stage
