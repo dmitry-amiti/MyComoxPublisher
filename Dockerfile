@@ -12,4 +12,5 @@ FROM openjdk:8-jdk-slim
 COPY --from=build /target/mycomox-publisher-1.0.jar demo.jar
 # ENV PORT=8080
 EXPOSE 8080
-ENTRYPOINT ["java","-jar","demo.jar"]
+# ENTRYPOINT ["java","-jar","demo.jar"]
+ENTRYPOINT ["java", "-Xms64m", "-Xmx512m","-jar","demo.jar"]
